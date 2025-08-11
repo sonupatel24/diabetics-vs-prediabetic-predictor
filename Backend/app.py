@@ -4,8 +4,11 @@ import joblib
 import matplotlib.pyplot as plt
 import random
 
-# Load your trained model
-model = joblib.load('xgboost_grid_search.joblib')  # Change to your model path
+import os
+import joblib
+
+
+model = joblib.load("C:\\Users\\sonu112\\Documents\\Diabetes Model\\Backend\\xgboost_grid_search.joblib")
 
 features = ['BMI', 'Age', 'wc', 'Hc', 'Alcohol', 'FBS']
 
