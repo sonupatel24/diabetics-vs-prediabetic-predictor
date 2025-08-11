@@ -8,7 +8,11 @@ import os
 import joblib
 
 
-model = joblib.load("C:\\Users\\sonu112\\Documents\\Diabetes Model\\Backend\\xgboost_grid_search.joblib")
+# Load the pre-trained model
+import os
+model_path = os.path.join("xgboost_grid_search.joblib")
+model = joblib.load(model_path)
+
 
 features = ['BMI', 'Age', 'wc', 'Hc', 'Alcohol', 'FBS']
 
